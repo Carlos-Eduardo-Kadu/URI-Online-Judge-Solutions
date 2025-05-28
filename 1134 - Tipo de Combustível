@@ -1,0 +1,38 @@
+using System;
+using System.Globalization;
+using System.Linq.Expressions;
+
+namespace ExeUri
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int alcool = 0, gasolina = 0, diesel = 0, faixa;
+
+            faixa = int.Parse(Console.ReadLine());
+            
+            while(faixa != 4) 
+            { 
+                if(faixa == 1) 
+                { 
+                    alcool++;
+                }
+                else if(faixa == 2) 
+                {
+                    gasolina++;
+                }
+                else if (faixa == 3)
+                {
+                    diesel++;
+                }
+                    faixa = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("MUITO OBRIGADO");
+            Console.WriteLine("Alcool: "+alcool);
+            Console.WriteLine("Gasolina: "+gasolina);
+            Console.WriteLine("Diesel: "+diesel);         
+        }
+    }
+}
